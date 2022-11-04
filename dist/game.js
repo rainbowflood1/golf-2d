@@ -2918,7 +2918,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   loadSprite("triangle", "sprites/triangle.png");
   loadSprite("grass", "sprites/grass.png");
   loadSprite("ellipse", "sprites/ellipse.png");
-  loadSprite("background", "https://www.paulwheeler.us/files/windows-95-desktop-background.jpg");
+  loadSprite("golf_bg0000", "sprites/golf_bg0000.png");
   var shakeforce = 5;
   var wolfyposx = 100;
   var wolfyposy = 200;
@@ -2928,7 +2928,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   var bally = 670;
   var playerpower = 1;
   var background = add([
-    sprite("background"),
+    sprite("golf_bg0000"),
     pos(width() / 2, height() / 2),
     origin("center"),
     scale(1),
@@ -2993,7 +2993,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   var power = add([
     text("Power 0"),
     pos(24, 100),
-    { value: 0 }
+    { value: power }
   ]);
   player.onClick(() => {
     player.moveBy(ballv, ballhg);

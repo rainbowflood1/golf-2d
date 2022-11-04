@@ -8,7 +8,7 @@ loadSprite("wolfy_golf0000", "sprites/wolfy_golf0000.png")
 loadSprite("triangle", "sprites/triangle.png")
 loadSprite("grass", "sprites/grass.png")
 loadSprite("ellipse", "sprites/ellipse.png")
-  loadSprite("background", "https://www.paulwheeler.us/files/windows-95-desktop-background.jpg");
+loadSprite("golf_bg0000", "sprites/golf_bg0000.png");
 
 // add a character to screen
 //vars
@@ -22,7 +22,7 @@ var bally = 670
 var playerpower = 1
 
 let background = add([
-  sprite("background"),
+  sprite("golf_bg0000"),
   // Make the background centered on the screen
   pos(width() / 2, height() / 2),
   origin("center"),
@@ -100,7 +100,7 @@ const score = add([
 const power = add([
   text("Power 0"),
   pos(24, 100),
-  { value: 0 },
+  { value: power },
 ])
 
 // with options

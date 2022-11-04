@@ -24,3 +24,7 @@ syntax = "javascript"
 
 [languages.javascript.languageServer]
 start = [ "typescript-language-server", "--stdio" ]
+
+[auth]
+pageEnabled = false
+buttonEnabled = false
